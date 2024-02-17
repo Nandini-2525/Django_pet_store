@@ -1,0 +1,32 @@
+body {
+    background: white;
+    text-align: center !important;
+}
+
+input { text-align: center !important;}
+button, .btn, input { width: 100%; padding: 15px !important; margin-top: 15px }
+
+nav {
+  box-shadow: 1px 1px #ccc;
+
+
+}
+
+.logo {
+    padding: 25px 45px;
+      letter-spacing: 3px;
+}
+
+.nav-item {
+    margin-right:20px !important;
+}
+
+.app {
+padding: 35px;
+}
+
+.bg-primary { background: #1d4086 !important}
+.bg-secondary { background: #da540b !important}
+.txt-primary { color: #1d4086 !important}
+.txt-secondary { color: #da540b !important}
+.nav-link, .nav-link:hover, .nav-link:visited { white !important}

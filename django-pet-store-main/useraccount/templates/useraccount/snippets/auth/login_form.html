@@ -1,0 +1,30 @@
+<form method="POST">
+  {% csrf_token %}
+  {% for field in form %}
+              <div class="form-group">
+                  <p>{{field.label_tag}}</p>
+                  {{ field}}
+
+                  {% if field.help_text%}
+                    <small id="emailHelp" class="form-text text-muted">{{field.help_text}}</small>
+                  {% endif %}
+
+
+                  {% if field.errors%}
+                  <p>{{field.error}}</p>
+                  {% endif %}
+              </div>
+            {% endfor %}
+    <br>
+
+    <br>
+
+  <button type="submit" class="btn text-light bg-primary">Log in</button>
+  <br />
+  <br />
+  <p class="h6 text-primary"> if you don not have an account<br><br>
+
+        </p>
+            <a href="{% url 'register' %}" class="text-tertiary txt-secondary">Register</a>
+
+</form>

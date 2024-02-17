@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+      <div class="col-6">
+        <p class="h5 txt-secondary">Welcome to pet store<br><br>
+
+        </p>
+        {% include 'useraccount/snippets/auth/login_form.html' with form=login_form %}
+
+      </div>
+      <div class="col-6">
+        <p class="h5">For sale:</p>
+        <p class="h5"><hr/></p>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock content %}

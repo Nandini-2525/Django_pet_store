@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+  <a class="navbar-brand logo" href="/">PET::<em class="warning">Store</em></a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto col-10">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Dogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Cats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Birds</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Other</a>
+        </li>
+      </ul>
+    <ul class="navbar-nav mr-auto col-10">
+         <li class="nav-item">
+          <a class="nav-link" href="#" >About us</a>
+        </li>
+      </ul>
+  </div>
+
+
+</nav>
+
+<script type="text/javascript">
+  function toggleDropdown(){
+    document.getElementById('profile').classList.toggle("hide");
+  }
+</script>
